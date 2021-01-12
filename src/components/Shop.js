@@ -1,12 +1,16 @@
 import React from "react";
+// import Menu from "./Menu";
+import Navbar from "./Navbar";
 
 const Shop = () => {
   return (
+    <>
+    <Navbar/>
     <div className="shop">
       <div className="container">
         <div className="shop__text">
           <div>
-            <h1>Free Delivery With PIZZA OF THE DAY Only 8.99 USD</h1>
+            <h1>Free Delivery With PIZZA OF THE DAY Only 399 Rupees </h1>
             <div className="shop__btn">
               <a href="" className="btn btn-smart">
                 SHOP NOW
@@ -16,6 +20,7 @@ const Shop = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

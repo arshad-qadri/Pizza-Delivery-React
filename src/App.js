@@ -1,4 +1,5 @@
 import React from "react";
+import {Redirect, Route, Switch} from "react-router-dom"
 import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -10,12 +11,21 @@ import Prices from "./components/Prices";
 function App() {
   return (
     <div>
-      <Header />
+      {/* <Header />
       <About />
       <Shop />
       <Menu />
-      <Clients />
-      <Prices />
+      <Clients /> */}
+      {/* <Prices /> */}
+      <Switch>
+     <Route exact path="/" component={Header} />
+       {/* <Route  path="/contact" component={Contact} /> */}
+       {/* <Route  path="/about" component={About} /> */}
+       <Route  path="/shop" component={Shop} />
+       <Redirect to="/"/>
+     </Switch>
+      
+      
     </div>
   );
 }

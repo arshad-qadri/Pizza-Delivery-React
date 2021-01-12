@@ -20,7 +20,7 @@ const Clients = () => {
           <div className="col-3">
             <div className="client">
               <h1>14868</h1>
-              <p>atisfied Clients</p>
+              <p>Satisfied Clients</p>
             </div>
           </div>
           <div className="col-3">
