@@ -46,11 +46,11 @@ body {
   margin-top: 20px;
 }
 
-.navbar {
+/* nav {
   position: fixed;
 
   width: 100%;
-}
+} */
 .navbar__text {
   display: flex;
   height: 60px;
@@ -277,4 +277,158 @@ body {
   .menu h1 {
     font-size: 25px;
   }
+}
+
+/* -------------------footer------------------------- */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.footer .contact_D {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #c7c3c3;
+  padding: 50px 0;
+}
+.footer p {
+  display: grid;
+  grid-template-columns: 30% 20% 50%;
+  width: 60%;
+  font-size: 1.3rem;
+  /* letter-spacing: 1px; */
+}
+.footer .social_icon {
+  background-color: #888888;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 20px 0;
+}
+.footer .social_icon i {
+  font-size: 2.5rem;
+  margin: 0 20px;
+  cursor: pointer;
+  /* color: blue; */
+}
+.footer .social_icon i:hover {
+  color: #c7c3c3;
+}
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d3436;
+  width: 100%;
+  color: #fff;
+  padding: 10px 0;
+  letter-spacing: 2px;
+  text-align: center;
+}
+/* ----------------get the app---------------- */
+.gettheapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+}
+.gettheapp .left img {
+  width: 300px;
+  height: 300px;
+}
+.gettheapp .right img {
+  width: auto;
+  height: 50px;
+  cursor: pointer;
+  margin: 10px;
+}
+.gettheapp .right .radio {
+  /* margin: 10px; */
+  cursor: pointer;
+}
+.gettheapp .right label {
+  margin: 20px;
+}
+.gettheapp .right .input input {
+  width: 250px;
+  padding: 5px 20px;
+}
+.gettheapp .right .input button {
+  /* width: 200px; */
+  padding: 5px 20px;
+  outline: none;
+  border: 2px solid #ff454f;
+  background-color: #ff454f;
+  color: #fff;
+  margin-left: 10px;
+}
+/* -----------------------vegpizza-------------------- */
+.vegpizza {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.product {
+  width: 350px;
+  height: 400px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+  padding: 0;
+}
+.product .price .strike {
+  text-decoration: line-through;
+}
+.product h3 {
+  background-color: #ff454f;
+  color: #fff;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 13px;
+}
+.product img {
+  width: 100%;
+  height: 240px;
+  margin-top: -8px;
+}
+.product .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.product .price p {
+  margin: 0 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.product .button {
+  margin-bottom: 10px;
+}
+.product .button button {
+  margin: 0 10px;
+  padding: 5px 30px;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  margin-bottom: 10px;
+}
+.product .button .buy {
+  background-color: orange;
+}
+.product .button .add {
+  background-color: rgb(70, 70, 245);
 }

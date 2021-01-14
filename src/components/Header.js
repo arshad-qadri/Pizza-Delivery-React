@@ -1,11 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import Footer from "../pages/Footer";
-import About from "./About";
-import Clients from "./Clients";
+// import Clients from "./Clients";
+import GetTheApp from "./GetTheApp";
 import Navbar from "./Navbar";
 import Prices from "./Prices";
-import Shop from "./Shop";
+// import Shop from "./Shop";
 const Header = () => {
   return (
     <div className="banner">
@@ -27,7 +27,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <About />
+     <GetTheApp/>
       <div className="shop">
         <div className="container">
           <div className="shop__text">

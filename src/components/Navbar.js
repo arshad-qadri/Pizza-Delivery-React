@@ -1,16 +1,16 @@
 import React from "react";
-import {NavLink} from "react-router-dom"
+// import {Link, NavLink} from "react-router-dom"
 
 const Navbar = () => {
   return (
-    // <nav classNameName="navbar">
-    //   <div classNameName="navbar__text">
-    //     <div classNameName="logo">
+    // <nav classNameNameName="navbar">
+    //   <div classNameNameName="navbar__text">
+    //     <div classNameNameName="logo">
     //       <img src="/img/logo.png" alt="logo" />
     //     </div>
-    //     <ul classNameName="navbar__ul">
+    //     <ul classNameNameName="navbar__ul">
     //       <li>
-    //         <NavLink href="">Home</NavLink>
+    //         <Link href="">Home</Link>
     //       </li>
     //       <li>
     //         <a href="">Menu</a>
@@ -27,46 +27,50 @@ const Navbar = () => {
     //     </ul>
     //   </div>
     // </nav>
-   
+    <>
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <div className="container">
-    <NavLink className="navbar-brand mb-0 h1 " to="/">FoodHub</NavLink>
+    <a className="navbar-brand" href="/">Navbar</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-        <li className="nav-item mx-2">
-          <NavLink className="nav-link active" aria-current="page" to="/">Home</NavLink>
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        
-        <li className="nav-item dropdown mx-2">
-          <NavLink className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Menu
-          </NavLink>
+          </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><NavLink className="dropdown-item" to="#">Veg Pizza</NavLink></li>
-            <li><NavLink className="dropdown-item" to="#">Nov-Veg Pizza</NavLink></li>
-            <li><NavLink className="dropdown-item" to="#">Beverages</NavLink></li>
-            <li><NavLink className="dropdown-item" to="#">Desserts</NavLink></li>
+            <li><a className="dropdown-item" href="/vegpizza">Veg Pizza</a></li>
+            <li><a className="dropdown-item" href="/nonvegpizza">Non-Veg Pizza</a></li>
+            <li><a className="dropdown-item" href="/beverages">Beverages</a></li>
+            <li><a className="dropdown-item" href="/desserts">Desserts</a></li>
           </ul>
         </li>
-        <li className="nav-item mx-2">
-          <NavLink className="nav-link" to="/shop">Shop</NavLink>
+        <li className="nav-item">
+          <a className="nav-link" href="/shop">Shop</a>
         </li>
-        <li className="nav-item mx-2">
-          <NavLink className="nav-link" to="/contact">Contact</NavLink>
+        <li className="nav-item">
+        <a className="nav-link" href="/about">About</a>
         </li>
-        <li className="nav-item mx-2">
-          <a className="nav-link" href="#about">About</a>
+        <li className="nav-item">
+        <a className="nav-link" href="/contact">Contact</a>
         </li>
-        
+
       </ul>
-      <button className="btn btn-danger"> Login </button>
+      <button className="btn btn-danger">Login</button>
       
     </div>
   </div>
 </nav>
+   
+  
+
+
+</>
   );
 };
 
