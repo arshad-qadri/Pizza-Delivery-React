@@ -5,7 +5,9 @@ import Footer from "./Footer";
 const About = () => {
   return (
     <>
+    
     <Navbar/>
+   
     <div className="about" id="about">
       <div className="container">
         <div className="row">

@@ -1,5 +1,5 @@
 import React from "react";
-// import {Link, NavLink} from "react-router-dom"
+import {Link, NavLink} from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -28,19 +28,19 @@ const Navbar = () => {
     //   </div>
     // </nav>
     <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar fixed navbar-expand-lg navbar-light bg-dark text-white">
   <div className="container">
-    <a className="navbar-brand" href="/">Navbar</a>
+    <NavLink className="navbar-brand text-white" to="/">FoodHub</NavLink>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav m-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="/">Home</a>
+          <NavLink className="nav-link active text-white mx-3" aria-current="page" to="/">Home</NavLink>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="nav-link dropdown-toggle text-white mx-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Menu
           </a>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -50,18 +50,15 @@ const Navbar = () => {
             <li><a className="dropdown-item" href="/desserts">Desserts</a></li>
           </ul>
         </li>
+        
+       
         <li className="nav-item">
-          <a className="nav-link" href="/shop">Shop</a>
+        <NavLink className="nav-link text-white mx-3" to="/about">About</NavLink>
         </li>
-        <li className="nav-item">
-        <a className="nav-link" href="/about">About</a>
-        </li>
-        <li className="nav-item">
-        <a className="nav-link" href="/contact">Contact</a>
-        </li>
+        
 
       </ul>
-      <button className="btn btn-danger">Login</button>
+      <button className="btn btn-danger"><NavLink className="text-white" to="/login">Login</NavLink></button>
       
     </div>
   </div>

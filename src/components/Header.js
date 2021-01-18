@@ -19,16 +19,22 @@ const Header = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
               minus ut mollitia error molestiae quia.
             </p>
-            <div className="banner__btn">
+            {/* <div className="banner__btn">
               <NavLink to="" className="btns btn-smart">
                 DEVLERY NOW
               </NavLink>
-            </div>
+            </div> */}
+            <select name="select-city" style={{width:"500px", padding:"6px 10px"}} >
+            <option value="Mumbai">Search City</option>
+            <option value="Mumbai">Delhi</option>
+            {/* <option value="Pune">Pune</option> */}
+            
+          </select>
           </div>
         </div>
       </div>
      <GetTheApp/>
-      <div className="shop">
+      {/* <div className="shop">
         <div className="container">
           <div className="shop__text">
             <div>
@@ -41,7 +47,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <Prices />
       {/* <Clients/> */}
       <Footer/>

@@ -8,6 +8,8 @@ import VegPizza from "./pages/VegPizza";
 import NonVegPizza from "./pages/NonVegPizza";
 import Beverages from "./pages/Beverages";
 import Desserts from "./pages/Desserts";
+import Login from "./pages/Login";
+import CreateAccount from "./pages/CreateAccount";
 // import Menu from "./components/Menu";
 // import Clients from "./components/Clients";
 // import Prices from "./components/Prices";
@@ -30,6 +32,8 @@ function App() {
        <Route  path="/nonvegpizza" component={NonVegPizza} />
        <Route  path="/beverages" component={Beverages} />
        <Route  path="/desserts" component={Desserts} />
+       <Route  path="/login" component={Login} />
+       <Route  path="/createAccount" component={CreateAccount} />
        
        <Redirect to="/"/>
      </Switch>
